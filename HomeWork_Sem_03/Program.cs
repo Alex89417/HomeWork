@@ -41,11 +41,22 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
+/* void Cube(int number)
+{
+int current = 1;
+if (number <= 0) Console.Write("Uncorrect data!");
+while (current <= number)
+    {
+    Console.Write(Math.Pow(current, 3) + ", "); 
+    current++;  
+    } 
+}     
 
+Console.Write("Enter a positive number: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-
-
-
+Cube(num);
+*/
 
 
 
