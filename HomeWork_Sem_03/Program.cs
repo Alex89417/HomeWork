@@ -7,12 +7,10 @@ bool Palidrom(string numbers)
 {
     int i = 0;
     int len = numbers.Length;
-    while (i < len/2) i++;
+    while (i < len/2) 
     {
-        if (numbers[i] != numbers [len - i -1])
-        {
-            return false;
-        }
+        if (numbers[i] != numbers [len - i -1]) return false;
+    i++;
     }
 return true;
 }
