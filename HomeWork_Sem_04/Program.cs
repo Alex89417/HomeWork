@@ -56,22 +56,32 @@ else SumInNumbers(num);
 
 
 
-//Task 29. Напишите программу, которая задаёт массив из m элементов и выводит их на экран:
-
+/* Task 29. Напишите программу, которая задаёт массив из m элементов и выводит их на экран:
 
 int[] CreateArray(int size)
 {
     int[] array = new int [size];
     for(int i = 0; i < size; i++)
     {
-        Console.Write($"Input the {i} index value: ");
-        array[i] = Convert.ToInt32(Console.Read());
+        Console.Write($"Input the {i} element array: ");
+        array[i] = Convert.ToInt32(Console.ReadLine());
     }
     return array;
 }   
+
+void WriteArray(int[] array)
+{
+    Console.Write("[");
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(" " + array[i] + " ");
+        
+    Console.Write("]");
+    Console.WriteLine();
+}
 
 Console.Write("input a length of an array: ");
 int length = Convert.ToInt32(Console.ReadLine());
 
 int[] myArray = CreateArray(length);
-Console.Write(myArray);
+WriteArray(myArray);
+*/
