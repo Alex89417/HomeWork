@@ -141,5 +141,5 @@ int[,] MyArray = Create2dRandomArray(rows, columns);
 Write2dArray(MyArray);
 Console.WriteLine();
 asdas(MyArray);
-*/
+
 
