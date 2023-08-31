@@ -1,4 +1,4 @@
-﻿//Task 54. Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива:
+﻿/* //Task 54. Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива:
 // Например, задан массив:
 // 1 4 7 2
 // 5 9 2 3
@@ -41,13 +41,16 @@ int[,] WillSoftArrayDescendingOrder(int[,] array)
                 int temp = array[i, j];
                 array[i, j] = array[i, j - 1];
                 array[i, j - 1] = temp;
-                for (int k = 0; k < j; j--)
+                if (j > 1)
                 {
-                    if (array[i, j] > array[i, j - 1])
+                    for (int k = 1; k < j; j--)
                     {
-                    temp = array[i, j];
-                    array[i, j] = array[i, j - 1];
-                    array[i, j - 1] = temp;
+                        if (array[i, j - 1] > array[i, j - 2])
+                        {
+                        temp = array[i, j - 1];
+                        array[i, j - 1] = array[i, j - 2];
+                        array[i, j - 2] = temp;
+                        }
                     }
                 }
             } 
@@ -55,16 +58,6 @@ int[,] WillSoftArrayDescendingOrder(int[,] array)
     }
     return array;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 Console.Write("Input a row array: ");
@@ -76,21 +69,11 @@ int[,] myArr = Create2dRandomArray(rows, columns);
 Write2dArray(myArr);
 Console.WriteLine();
 Write2dArray(WillSoftArrayDescendingOrder(myArr));
+*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-//Task 56. Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов:
+/* //Task 56. Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов:
 // Например, задан массив:
 // 1 4 7 2
 // 5 9 2 3
@@ -98,30 +81,68 @@ Write2dArray(WillSoftArrayDescendingOrder(myArr));
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
+int[,] Create2dRandomArray(int rows, int columns)
+{
+    int[,] array2d = new int[rows, columns];
+
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < columns; j++)
+            array2d[i, j] = new Random().Next(1, 10);
+            
+return array2d;        
+}
+
+void Write2dArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        int sum = 0;
+        for (int j = 0; j < array.GetLength(1); j++)
+            {
+            Console.Write(array[i, j] + " ");
+            sum += array[i, j];
+            }
+        Console.Write($"  --> Сумма = {sum}");
+
+    Console.WriteLine();
+    }
+}
+
+void MinRowArray(int[,] array)
+{
+    int sumMin = 0;
+    int row = 0;
+    
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        int sum = 0;
+        for (int j = 0; j < array.GetLength(1); j++)
+            sum += array[i, j];
+            
+        if (i == 0)
+            sumMin = sum;
+
+        if (sum < sumMin)
+        {
+            sumMin = sum;
+            row = i;
+        }    
+    }
+    Console.WriteLine();
+    Console.WriteLine($"Минимальнвая сумма в строке под номерам {row + 1}!");
+}
 
 
+Console.Write("Input a row array: ");
+int rows = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a column array: ");
+int columns = Convert.ToInt32(Console.ReadLine());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+int[,] myArr = Create2dRandomArray(rows, columns);
+Write2dArray(myArr);
+// Console.WriteLine();
+MinRowArray(myArr);
+*/
 
 
 
