@@ -2,7 +2,7 @@
 // 14212 -> нет
 // 12821 -> да
 // 23432 -> да
-
+/* 
 bool Palidrom(string numbers)
 {
     int i = 0;
@@ -22,7 +22,7 @@ bool res = Palidrom(number);
 
 if(res == true) Console.WriteLine("Yes");
 else Console.WriteLine("No");
-
+*/
 
 
 
