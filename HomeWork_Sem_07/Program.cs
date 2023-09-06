@@ -89,7 +89,7 @@ WriteElement(MyArray, i, j);
 
 
 //Task 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце:
-/* 
+
 int[,] Create2dRandomArray(int rows, int columns)
 {
     int[,] array2d = new int[rows, columns];
