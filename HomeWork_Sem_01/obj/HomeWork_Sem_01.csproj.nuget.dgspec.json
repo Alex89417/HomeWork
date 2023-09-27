@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sanya89417\\Desktop\\Учеба\\Знакомство с языком C#\\Домашка C#\\HomeWork_Sem_01\\HomeWork_Sem_01.csproj": {}
+    "C:\\Users\\Sanya89417\\Desktop\\Учеба\\Знакомство с языком C#\\HomeWork C#\\HomeWork_Sem_01\\HomeWork_Sem_01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sanya89417\\Desktop\\Учеба\\Знакомство с языком C#\\Домашка C#\\HomeWork_Sem_01\\HomeWork_Sem_01.csproj": {
+    "C:\\Users\\Sanya89417\\Desktop\\Учеба\\Знакомство с языком C#\\HomeWork C#\\HomeWork_Sem_01\\HomeWork_Sem_01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sanya89417\\Desktop\\Учеба\\Знакомство с языком C#\\Домашка C#\\HomeWork_Sem_01\\HomeWork_Sem_01.csproj",
+        "projectUniqueName": "C:\\Users\\Sanya89417\\Desktop\\Учеба\\Знакомство с языком C#\\HomeWork C#\\HomeWork_Sem_01\\HomeWork_Sem_01.csproj",
         "projectName": "HomeWork_Sem_01",
-        "projectPath": "C:\\Users\\Sanya89417\\Desktop\\Учеба\\Знакомство с языком C#\\Домашка C#\\HomeWork_Sem_01\\HomeWork_Sem_01.csproj",
+        "projectPath": "C:\\Users\\Sanya89417\\Desktop\\Учеба\\Знакомство с языком C#\\HomeWork C#\\HomeWork_Sem_01\\HomeWork_Sem_01.csproj",
         "packagesPath": "C:\\Users\\Sanya89417\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sanya89417\\Desktop\\Учеба\\Знакомство с языком C#\\Домашка C#\\HomeWork_Sem_01\\obj\\",
+        "outputPath": "C:\\Users\\Sanya89417\\Desktop\\Учеба\\Знакомство с языком C#\\HomeWork C#\\HomeWork_Sem_01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sanya89417\\AppData\\Roaming\\NuGet\\NuGet.Config"

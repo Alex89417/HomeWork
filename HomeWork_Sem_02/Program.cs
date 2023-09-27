@@ -47,4 +47,33 @@ else Console.WriteLine("Рабочий");
 */
 
 
+//-----------------------------------------------------------------------------------------------------------------
+
+/* //*Task 10. Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа:
+
+Console.Write("Input a number: ");
+// Console.Write(Convert.ToInt32(Console.ReadLine()) / 10 % 10); 
+Console.WriteLine(Console.ReadLine()![1]); */
+
+/* //Task 13. Напишите программу, которая выводит третью цифру заданного числа ( или -1, если третьей цифры нет):
+
+Console.Write("Input a number: ");
+string n = Console.ReadLine()!;
+if (n.Length <= 2) Console.WriteLine("Значение меньше 100!");
+else Console.WriteLine(n[2]); */
+
+/* //Task 15. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным:
+
+Repeat:
+Console.Write("Input a day of the week: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+if (n < 1 || n > 7) goto Repeat;
+if (n < 6) Console.WriteLine("Этот день не является выходным!");
+else Console.WriteLine("Ура выходной!!!"); */
+
+
+
+
+
 
